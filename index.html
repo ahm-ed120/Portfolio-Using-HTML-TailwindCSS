@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon - Full Stack Developer & Game Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-20 backdrop-blur-md bg-gray-800/80 shadow-lg transition-all duration-500"
+        data-aos="fade-down" data-aos-duration="1000">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span
+                        class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400">Jhon</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#home" class="nav-link text-gray-300 hover:text-white transition duration-300"
+                            data-link="home">Home</a>
+                        <a href="#about" class="nav-link text-gray-300 hover:text-white transition duration-300"
+                            data-link="about">About</a>
+                        <a href="#skills" class="nav-link text-gray-300 hover:text-white transition duration-300"
+                            data-link="skills">Skills</a>
+                        <a href="#projects" class="nav-link text-gray-300 hover:text-white transition duration-300"
+                            data-link="projects">Projects</a>
+                        <a href="#contact" class="nav-link text-gray-300 hover:text-white transition duration-300"
+                            data-link="contact">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle"
+                        class="mobile-menu-button p-2 rounded-md text-gray-300 hover:text-white transition-all duration-300 focus:outline-none">
+                        <svg id="menu-icon" class="h-6 w-6 transform transition-transform duration-300"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-900/90 backdrop-blur-md px-6 pb-6 pt-2">
+            <a href="#home" class="block py-2 text-gray-300 hover:text-white transition" data-link="home">Home</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-white transition" data-link="about">About</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-white transition" data-link="skills">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-white transition"
+                data-link="projects">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition"
+                data-link="contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section with animated background and scroll animation -->
+    <section id="home"
+        class="relative pt-24 pb-12 md:pt-32 md:pb-20 min-h-screen flex items-center bg-gray-900 overflow-hidden">
+        <div id="particles-js" class="absolute inset-0 z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <!-- Text Section -->
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                        Hi, I'm <span class="text-purple-400">Ahmedullah</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-300">
+                        Full Stack Developer & Unity Game Developer
+                    </h2>
+                    <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                        I build web applications, mobile apps, and immersive games using cutting-edge technologies.
+                        Specializing in AI/ML integration and full-stack development.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            View My Work
+                        </a>
+                        <a href="#contact"
+                            class="border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div
+                        class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 group transition-transform duration-500 hover:scale-105 hover:-rotate-1">
+                        <div class="absolute -inset-3 bg-purple-500/30 blur-3xl rounded-full z-0 opacity-70"></div>
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                            alt="Jhon"
+                            class="relative z-10 rounded-full border-4 border-purple-500 w-full h-full object-cover shadow-2xl shadow-purple-500/30 group-hover:ring-4 group-hover:ring-purple-400/40 transition duration-500 ease-in-out">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--About section-->
+    <section id="about" class="py-24 relative bg-gray-900">
+        <div id="about-particles" class="absolute inset-0 z-0"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">
+                <span class="border-b-4 border-purple-500 pb-2">About Me</span>
+            </h2>
+
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center" data-aos="zoom-in">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                        alt="Jhon"
+                        class="rounded-lg shadow-2xl shadow-purple-500/20 w-64 h-64 object-cover transition duration-300 hover:scale-105 cursor-pointer">
+                </div>
+
+                <div class="md:w-2/3" data-aos="fade-left">
+                    <p class="text-gray-300 mb-6 text-lg">
+                        I'm a Computer Science student at <span class="text-purple-400 font-semibold">LUND University</span>.
+                        I specialize in full-stack web development and Unity
+                        game development, blending creativity with code to build interactive digital experiences.
+                    </p>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        My journey is driven by constant learning. I’ve earned certifications to strengthen my
+                        foundation in modern technologies.
+                    </p>
+
+                    <!-- Quote -->
+                    <div class="bg-gray-800 border-l-4 border-purple-500 p-4 rounded-lg shadow-lg mb-6"
+                        data-aos="fade-right">
+                        <p class="italic text-gray-200 text-lg">
+                            “The best way to predict the future is to invent it.”
+                        </p>
+                        <p class="text-sm text-purple-400 mt-2 text-right">— Alan Kay</p>
+                    </div>
+
+                    <!-- Certificates -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-400 mb-4">Certifications</h3>
+                        <div class="flex flex-wrap gap-6">
+                            <a href="#" target="_blank"
+                                class="transition transform hover:scale-105">
+                                <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB"
+                                    class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
+                            </a>
+                            <a href="#" target="_blank"
+                                class="transition transform hover:scale-105">
+                                <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python"
+                                    class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
+                            </a>
+                            <a href="#" target="_blank"
+                                class="transition transform hover:scale-105">
+                                <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png"
+                                    alt="DSA Java" class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 relative bg-gray-900">
+        <div id="skills-particles" class="absolute inset-0 z-0"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">
+                <span class="border-b-4 border-purple-500 pb-2">My Skills</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-purple-500/20 transition duration-300"
+                    data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Programming Languages</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><i class="fab fa-java text-red-500 mr-2"></i> Java</li>
+                        <li class="flex items-center"><i class="fas fa-copyright text-blue-500 mr-2"></i> C/C++</li>
+                        <li class="flex items-center"><i class="fab fa-microsoft text-purple-500 mr-2"></i> C#</li>
+                        <li class="flex items-center"><i class="fab fa-python text-yellow-500 mr-2"></i> Python</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-purple-500/20 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Game Development</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><i class="fab fa-unity text-gray-300 mr-2"></i> Unity Engine</li>
+                        <li class="flex items-center"><i class="fas fa-gamepad text-green-500 mr-2"></i> Game Design
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-cube text-blue-400 mr-2"></i> 3D Modeling</li>
+                        <li class="flex items-center"><i class="fas fa-vr-cardboard text-purple-300 mr-2"></i> VR
+                            Development</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-purple-500/20 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Full Stack Dev</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><i class="fab fa-js-square text-yellow-300 mr-2"></i>
+                            JavaScript/TypeScript</li>
+                        <li class="flex items-center"><i class="fab fa-react text-blue-400 mr-2"></i> React.js</li>
+                        <li class="flex items-center"><i class="fab fa-node-js text-green-500 mr-2"></i> Node.js</li>
+                        <li class="flex items-center"><i class="fas fa-database text-teal-400 mr-2"></i> SQL/NoSQL</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-purple-500/20 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-400">AI / Machine Learning</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-brain text-purple-300 mr-2"></i> Machine Learning
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-robot text-blue-300 mr-2"></i> Deep Learning</li>
+                        <li class="flex items-center"><i class="fas fa-chart-line text-green-400 mr-2"></i> Data Science
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-language text-red-400 mr-2"></i> NLP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative bg-gray-900">
+        <div id="projects-particles" class="absolute inset-0 z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">
+                <span class="border-b-4 border-purple-500 pb-2">My Projects</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-purple-500/30"
+                    data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        alt="AI Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-purple-400">AI-Powered Analytics Platform</h3>
+                        <p class="text-gray-300 mb-4">A comprehensive analytics platform with machine learning
+                            capabilities for
+                            predictive analysis and data visualization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">Python</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">TensorFlow</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">React</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-purple-500/30"
+                    data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        alt="Game Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-purple-400">Adventure Quest Game</h3>
+                        <p class="text-gray-300 mb-4">A 3D adventure game built with Unity featuring immersive
+                            environments and
+                            complex gameplay mechanics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">Unity</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">C#</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">Blender</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-purple-500/30"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                        alt="E-commerce" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-purple-400">E-commerce Platform</h3>
+                        <p class="text-gray-300 mb-4">A full-featured e-commerce solution with payment integration,
+                            inventory
+                            management, and analytics dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">React</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">Node.js</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm text-white">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 border border-purple-400 text-purple-400 rounded-lg hover:bg-purple-400 hover:text-white transition duration-300 shadow-lg hover:shadow-purple-500/30">
+                    View All Projects
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative bg-gray-900">
+        <!-- Particle Background -->
+        <div id="contact-particles" class="absolute inset-0 z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
+                <span class="border-b-4 border-purple-500 pb-2">Get In Touch</span>
+            </h2>
+
+            <div class="md:flex md:space-x-8">
+                <!-- Contact Info -->
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-6 text-purple-400">Contact Information</h3>
+                    <p class="text-gray-300 mb-8">
+                        Feel free to reach out to me for any questions or opportunities. I'm always open to discussing
+                        new projects, creative ideas, or collaborations.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-purple-500 p-3 rounded-full mr-4 shadow-lg shadow-purple-500/30">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Email</h4>
+                                <p class="text-gray-400">jhon@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-500 p-3 rounded-full mr-4 shadow-lg shadow-purple-500/30">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Phone</h4>
+                                <p class="text-gray-400">+1 234 567 8901</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-purple-500 p-3 rounded-full mr-4 shadow-lg shadow-purple-500/30">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Location</h4>
+                                <p class="text-gray-400">New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="mt-8">
+                        <h4 class="font-medium text-white mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="bg-gray-800 hover:bg-purple-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 shadow-lg hover:shadow-purple-500/30">
+                                <i class="fab fa-github text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-gray-800 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 shadow-lg hover:shadow-blue-500/30">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-gray-800 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 shadow-lg hover:shadow-blue-400/30">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-gray-800 hover:bg-red-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 shadow-lg hover:shadow-red-500/30">
+                                <i class="fab fa-youtube text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-lg shadow-gray-800/50 text-white">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Your Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-lg shadow-gray-800/50 text-white">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                            <input type="text" id="subject"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-lg shadow-gray-800/50 text-white">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your
+                                Message</label>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-lg shadow-gray-800/50 text-white"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-purple-500/30">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400">&copy; 2023 Ahmedullah. All rights reserved.</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex justify-center md:justify-end space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle with animation
+        const menuBtn = document.querySelector('#menu-toggle');
+        const menuIcon = document.querySelector('#menu-icon');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('rotate-90');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('rotate-90');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active section highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function setActiveNav() {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-purple-400', 'font-semibold');
+                if (link.dataset.link === current) {
+                    link.classList.add('text-purple-400', 'font-semibold');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveNav);
+        window.addEventListener('load', setActiveNav);
+    </script>
+
+    <!-- AOS Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // Hero Section
+        tsParticles.load("particles-js", {
+            fullScreen: { enable: false },
+            background: { color: { value: "transparent" } },
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        area: 800
+                    }
+                },
+                color: {
+                    value: "#7e22ce"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.4,
+                    random: true
+                },
+                size: {
+                    value: 2.5,
+                    random: true
+                },
+                links: {
+                    enable: true,
+                    distance: 100,
+                    color: "#7e22ce",
+                    opacity: 1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.3,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce"
+                    }
+                }
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 120,
+                        links: {
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            detectRetina: true
+        });
+
+        // About Section
+        tsParticles.load("about-particles", {
+            fullScreen: { enable: false },
+            background: { color: { value: "transparent" } },
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        area: 800
+                    }
+                },
+                color: {
+                    value: "#7e22ce"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.4,
+                    random: true
+                },
+                size: {
+                    value: 2.5,
+                    random: true
+                },
+                links: {
+                    enable: true,
+                    distance: 100,
+                    color: "#7e22ce",
+                    opacity: 1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.3,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce"
+                    }
+                }
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 120,
+                        links: {
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            detectRetina: true
+        });
+
+        // Skills Section
+        tsParticles.load("skills-particles", {
+            fullScreen: { enable: false },
+            background: { color: { value: "transparent" } },
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        area: 800
+                    }
+                },
+                color: {
+                    value: "#7e22ce"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.4,
+                    random: true
+                },
+                size: {
+                    value: 2.5,
+                    random: true
+                },
+                links: {
+                    enable: true,
+                    distance: 100,
+                    color: "#7e22ce",
+                    opacity: 1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.3,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce"
+                    }
+                }
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 120,
+                        links: {
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            detectRetina: true
+        });
+
+        // Projects Section
+        tsParticles.load("projects-particles", {
+            fullScreen: { enable: false },
+            background: { color: { value: "transparent" } },
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        area: 800
+                    }
+                },
+                color: {
+                    value: "#7e22ce"
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.4,
+                    random: true
+                },
+                size: {
+                    value: 2.5,
+                    random: true
+                },
+                links: {
+                    enable: true,
+                    distance: 100,
+                    color: "#7e22ce",
+                    opacity: 1,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.3,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce"
+                    }
+                }
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 120,
+                        links: {
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            detectRetina: true
+        });
+
+        // Contact Section
+        tsParticles.load("contact-particles", {
+            fullScreen: { enable: false },
+            background: { color: { value: "transparent" } },
+            particles: {
+                number: { value: 50 },
+                size: { value: 2.5 },
+                color: { value: "#a855f7" },
+                links: {
+                    enable: true,
+                    color: "#a855f7",
+                    distance: 100,
+                    opacity: 0.25,
+                    width: 1
+                },
+                move: { enable: true, speed: 0.8 },
+                opacity: { value: 0.3, random: true }
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab"
+                    }
+                },
+                modes: {
+                    grab: {
+                        distance: 120,
+                        links: { opacity: 0.4 }
+                    }
+                }
+            },
+            detectRetina: true
+        });
+    </script>
+</body>
+</html>
