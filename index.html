@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
     <!-- Navigation -->
     <nav class="fixed w-full z-20 backdrop-blur-md bg-gray-800/80 shadow-lg transition-all duration-500"
         data-aos="fade-down" data-aos-duration="1000">
@@ -49,15 +49,20 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden bg-gray-900/90 backdrop-blur-md px-6 pb-6 pt-2">
-            <a href="#home" class="block py-2 text-gray-300 hover:text-white transition" data-link="home">Home</a>
-            <a href="#about" class="block py-2 text-gray-300 hover:text-white transition" data-link="about">About</a>
-            <a href="#skills" class="block py-2 text-gray-300 hover:text-white transition" data-link="skills">Skills</a>
-            <a href="#projects" class="block py-2 text-gray-300 hover:text-white transition"
+        <div
+            class="mobile-menu hidden md:hidden bg-gray-900/90 backdrop-blur-lg px-6 pb-6 pt-4 rounded-b-xl shadow-lg border-t border-gray-700 max-w-full overflow-x-hidden">
+            <a href="#home" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
+                data-link="home">Home</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
+                data-link="about">About</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
+                data-link="skills">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
                 data-link="projects">Projects</a>
-            <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition"
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
                 data-link="contact">Contact</a>
         </div>
+
     </nav>
 
 
@@ -96,8 +101,7 @@
                     <div
                         class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 group transition-transform duration-500 hover:scale-105 hover:-rotate-1">
                         <div class="absolute -inset-3 bg-purple-500/30 blur-3xl rounded-full z-0 opacity-70"></div>
-                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-                            alt="Jhon"
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Jhon"
                             class="relative z-10 rounded-full border-4 border-purple-500 w-full h-full object-cover shadow-2xl shadow-purple-500/30 group-hover:ring-4 group-hover:ring-purple-400/40 transition duration-500 ease-in-out">
                     </div>
                 </div>
@@ -116,14 +120,14 @@
 
             <div class="md:flex md:items-center md:space-x-12">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center" data-aos="zoom-in">
-                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-                        alt="Jhon"
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Jhon"
                         class="rounded-lg shadow-2xl shadow-purple-500/20 w-64 h-64 object-cover transition duration-300 hover:scale-105 cursor-pointer">
                 </div>
 
                 <div class="md:w-2/3" data-aos="fade-left">
                     <p class="text-gray-300 mb-6 text-lg">
-                        I'm a Computer Science student at <span class="text-purple-400 font-semibold">LUND University</span>.
+                        I'm a Computer Science student at <span class="text-purple-400 font-semibold">LUND
+                            University</span>.
                         I specialize in full-stack web development and Unity
                         game development, blending creativity with code to build interactive digital experiences.
                     </p>
@@ -145,18 +149,15 @@
                     <div>
                         <h3 class="text-xl font-semibold text-purple-400 mb-4">Certifications</h3>
                         <div class="flex flex-wrap gap-6">
-                            <a href="#" target="_blank"
-                                class="transition transform hover:scale-105">
+                            <a href="#" target="_blank" class="transition transform hover:scale-105">
                                 <img src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB"
                                     class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
                             </a>
-                            <a href="#" target="_blank"
-                                class="transition transform hover:scale-105">
+                            <a href="#" target="_blank" class="transition transform hover:scale-105">
                                 <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python"
                                     class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
                             </a>
-                            <a href="#" target="_blank"
-                                class="transition transform hover:scale-105">
+                            <a href="#" target="_blank" class="transition transform hover:scale-105">
                                 <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png"
                                     alt="DSA Java" class="w-20 h-20 shadow-xl shadow-purple-500/30 rounded-lg">
                             </a>
@@ -807,4 +808,5 @@
         });
     </script>
 </body>
+
 </html>
